@@ -11,6 +11,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     border: 2px solid black;
+    margin: 10px auto;
 }
 
 .sketch-row {
@@ -24,4 +25,10 @@
 
 .hovered {
     background-color: gray;
+}
+
+#size-button {
+    padding: 10px 20px;
+    display: block;
+    margin: 30px auto;
 }
