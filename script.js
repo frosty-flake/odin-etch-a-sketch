@@ -29,19 +29,18 @@ makeGrid(64);
 
 const sizeButton = document.querySelector("#size-button");
 
-sizeButton.addEventListener("click", () => {
-    let size = -1;
+sizeButton.addEventListener("click", () => { 
+    let size = prompt("Enter your grid size (between 1 and 100:");
 
-    while (size < 0 || size > 100){
-        size = prompt("Enter your grid size:",50);
+    if (size === null) return;
+
+    while (size <= 0 || size > 100){
+        size = prompt("Enter your grid size (between 1 and 100):");
         if (size < 0) {
             alert("That's less than zero!");
         } else if (size > 100) {
             alert("That's too big!");
         };
-
     }
-    if (size != -1) {
-        makeGrid(size);
-    };
-});
+    makeGrid(size);
+    });
