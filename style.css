@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    aspect-ratio: 1/1;
+    max-width: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+.sketch-row {
+    display: flex;
+    flex: 1;
+}
+
+.sketch-box{
+    border: 2px solid blue;
+    flex: 1 0 auto;
+}
