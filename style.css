@@ -18,7 +18,10 @@
     flex: 1;
 }
 
-.sketch-box{
-    border: 2px solid blue;
+.sketch-box {
     flex: 1 0 auto;
+}
+
+.hovered {
+    background-color: gray;
 }
