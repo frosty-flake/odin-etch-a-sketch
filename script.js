@@ -19,13 +19,13 @@ function makeGrid(dimension) {
     const boxes = document.querySelectorAll(".sketch-box");
 
     boxes.forEach((box) => {
-        box.addEventListener("mouseenter", (e) => {
-            box.classList.add("hovered");
+        box.addEventListener("mouseenter", () => {
+            box.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
         });
     });
 };
 
-makeGrid(64);
+makeGrid(16);
 
 const sizeButton = document.querySelector("#size-button");
 
@@ -43,4 +43,4 @@ sizeButton.addEventListener("click", () => {
         };
     }
     makeGrid(size);
-    });
+});
