@@ -20,6 +20,9 @@ function makeGrid(dimension) {
 
     boxes.forEach((box) => {
         box.addEventListener("mouseenter", () => {
+            if (box.style.opacity != 1.0) {
+                box.style.opacity = Number(box.style.opacity) + 0.1;
+            }
             box.style.backgroundColor = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;
         });
     });
